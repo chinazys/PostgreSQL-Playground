@@ -1,0 +1,1 @@
+DELETE FROM SGroup, Student, Course, Deadline, Mark;
