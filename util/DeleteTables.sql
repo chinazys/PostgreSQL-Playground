@@ -1,1 +1,1 @@
-DROP TABLE SGroup, Student, Course, Deadline, Mark;
+DROP TABLE course, deadline, mark, sgroup, student;

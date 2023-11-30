@@ -1,1 +1,1 @@
-DELETE FROM SGroup, Student, Course, Deadline, Mark;
+DELETE FROM course, deadline, mark, sgroup, student;

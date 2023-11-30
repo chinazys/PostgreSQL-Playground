@@ -1,5 +1,5 @@
-SELECT Student.StudentID AS "Student ID", Student.FirstName AS "First Name", Student.LastName AS "Last Name", (SELECT COUNT(*) FROM Deadline) - COUNT(Deadline.DeadlineID) AS "Pending Midterms/Exams"
-FROM Student
-LEFT JOIN Mark ON Student.StudentID = Mark.StudentID
-LEFT JOIN Deadline ON Mark.DeadlineID = Deadline.DeadlineID
-GROUP BY Student.StudentID;
+SELECT student.student_id AS "student ID", student.first_name AS "First name", student.last_name AS "Last name", (SELECT COUNT(*) FROM deadline) - COUNT(deadline.deadline_id) AS "Pending Midterms/Exams"
+FROM student
+LEFT JOIN mark ON student.student_id = mark.student_id
+LEFT JOIN deadline ON mark.deadline_id = deadline.deadline_id
+GROUP BY student.student_id;
